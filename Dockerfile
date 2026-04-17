@@ -27,4 +27,4 @@ RUN dotnet publish "./BirthdayWish.csproj" -c $BUILD_CONFIGURATION -o /app/publi
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "BirthdayWishWebsite.dll"]
+ENTRYPOINT ["dotnet", "BirthdayWish.dll"]
