@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffcc33, #ff9966, #ff6699);
+    background-size: 300% 300%;
+    animation: bgmove 8s ease infinite;
+    overflow: hidden;
+}
+
+@keyframes bgmove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.birthday-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.95);
+    padding: 45px;
+    border-radius: 28px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+    max-width: 700px;
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #e65100;
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 24px;
+    color: #333;
+    line-height: 1.8;
+}
+
+.signature {
+    margin-top: 25px;
+    font-size: 24px;
+}
+
+.btn-wish {
+    margin-top: 28px;
+    padding: 16px 30px;
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(90deg,#ff7b00,#ff3d00);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+    .btn-wish:hover {
+        transform: scale(1.03);
+    }
