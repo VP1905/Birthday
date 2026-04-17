@@ -4,36 +4,43 @@
 }
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Happy Birthday Papa</title>
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <div class="floating-balloons">
-        <span>🎈</span><span>🎉</span><span>🎈</span><span>🎊</span>
+        
     </div>
 
     <div class="birthday-container">
         <div class="card">
             <h1>🎉 Happy Birthday Papa 🎉</h1>
+
             <p class="message">
                 Wishing you a day filled with happiness, love, and beautiful moments.<br />
                 Thank you for always supporting and inspiring me.<br />
                 You mean the world to me.
             </p>
 
-            <p class="signature">With love,<br /><strong>Your Daughter</strong></p>
+            <p class="signature">
+                With love,<br />
+                <strong>Your Daughter</strong>
+            </p>
 
             <button onclick="showMessage()" class="btn-wish">Click for a Surprise</button>
+
             <p id="surprise" class="surprise-text"></p>
         </div>
     </div>
 
     <script>
         function showMessage() {
-            document.getElementById('surprise').innerText = '💖 You are the best father in the world! 💖';
+            document.getElementById('surprise').innerText =
+                '💖 You are the best father in the world! 💖';
         }
     </script>
 </body>
